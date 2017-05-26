@@ -1,7 +1,7 @@
 # GoogleTrendsAPIを使って相対検索数を吐き出すスクリプト
 ## 実行方法
 * python run.py [基準とするキーワード] [入力ファイルパス] [出力ファイルパス]
-## ファイル
+## ファイル構成
 * run.py
   - main
 * csv_processing.py
