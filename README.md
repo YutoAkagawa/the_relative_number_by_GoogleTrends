@@ -5,6 +5,6 @@
 * run.py
  - main
 * csv_processing.py
- - csvの読み込み・書き込みを行う
+  - csvの読み込み・書き込みを行う
 * number_of_search.py
- - APIを使ってjson形式で結果を受け取る  
+  - APIを使ってjson形式で結果を受け取る  
