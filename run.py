@@ -9,7 +9,7 @@ import os
 import os.path
 import shutil
 import sys
-from number_of_word import NumberOfSearch
+from number_of_search import NumberOfSearch
 from csv_processing import CSVProcessing
 
 if __name__ == '__main__':
@@ -21,12 +21,14 @@ if __name__ == '__main__':
     data = cp.read()
     ans_list = []
     for raw in data:
-        #obj_list, trg_list = ns.get_json(raw[1])
-        obj_list = ['2.0', '5.0', '3.0']
-        trg_list = ['20.0', '2.0', '3.0']
+        obj_list, trg_list = ns.get_json(raw[1])
+        print raw
+        #obj_list = ['2.0', '5.0', '3.0']
+        #trg_list = ['20.0', '2.0', '3.0']
         obj = ns.calculate_average(obj_list)
         trg = ns.calculate_average(trg_list)
         ans = ns.calculate_relative_number(obj, trg)
+        print ans
         raw.append(ans)
         ans_list.append(raw)
     cp.write(ans_list)
