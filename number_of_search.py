@@ -11,7 +11,6 @@ import csv
 import shutil
 import numpy as np
 import sys
-from time import sleep
 from urllib import urlopen
 
 class NumberOfSearch:
@@ -23,7 +22,6 @@ class NumberOfSearch:
         print target_word
         url = 'http://www.google.com/trends/fetchComponent?q=' + self.object_word + ',' + target_word + '&cid=TIMESERIES_GRAPH_0&export=3'
         print url
-        sleep(60)
         src = urlopen(url).read()
         data = src.split("\"")
         object_num = []

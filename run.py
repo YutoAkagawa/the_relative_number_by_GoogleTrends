@@ -11,6 +11,7 @@ import shutil
 import sys
 from number_of_search import NumberOfSearch
 from csv_processing import CSVProcessing
+from time import sleep
 
 if __name__ == '__main__':
     if len(sys.argv) < 4:
@@ -31,6 +32,7 @@ if __name__ == '__main__':
         print ans
         raw.append(ans)
         ans_list.append(raw)
+        sleep(600)
     cp.write(ans_list)
 
 
